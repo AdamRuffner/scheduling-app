@@ -1,12 +1,12 @@
 import { React, useState } from 'react';
-import { useNavigate, Link, useSearchParams } from 'react-router-dom'; 
+import { useNavigate, Link } from 'react-router-dom'; 
 
 const Login = () => {
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
     const navigate = useNavigate();
 
-    const handleSumbit = (e) => {
+    const handleSubmit = (e) => {
         if (username.trim() && password.trim()) {
             e.preventDefault();
             console.log({username, password})

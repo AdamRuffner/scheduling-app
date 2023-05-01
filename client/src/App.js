@@ -3,7 +3,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 // Components
 // import Dashboard from './components/Dashboard';
 import Login from './components/Login';
-//import Signup from './components/Signup';
+import Signup from './components/Signup';
 //import BookUser from './components/BookUser';
 
 import { ToastContainer } from 'react-toastify';
@@ -17,7 +17,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path ='/' element={<Login />} />
-          {/* <Route path ='/regiser' element={<Signup />} /> */}
+          <Route path ='/register' element={<Signup />} />
           {/* <Route path ='/book/:user' element={<BookUser />} /> */}
 
         </Routes>
