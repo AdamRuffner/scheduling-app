@@ -19,7 +19,6 @@ function App() {
           <Route path ='/' element={<Login />} />
           <Route path ='/register' element={<Signup />} />
           <Route path ='/book' element={<BookUser />} />
-
         </Routes>
       </BrowserRouter>
       <ToastContainer/>
