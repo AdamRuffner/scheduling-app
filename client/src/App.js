@@ -4,7 +4,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 // import Dashboard from './components/Dashboard';
 import Login from './components/Login';
 import Signup from './components/Signup';
-//import BookUser from './components/BookUser';
+import BookUser from './components/BookUser';
 
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -18,7 +18,7 @@ function App() {
         <Routes>
           <Route path ='/' element={<Login />} />
           <Route path ='/register' element={<Signup />} />
-          {/* <Route path ='/book/:user' element={<BookUser />} /> */}
+          <Route path ='/book' element={<BookUser />} />
 
         </Routes>
       </BrowserRouter>
