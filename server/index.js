@@ -17,7 +17,7 @@ app.get('/api', (req,res) => {
 
 app.post('/register', (req, res) => {
     const { username, email, password } = req.body;
-    let result = database.filter((user) => user.email === email || user.username === username);
+    let result = database.filter((user) => {user.email === email || user.username === username});
 
     if(result.length === 0) {
         database.push({
@@ -29,6 +29,26 @@ app.post('/register', (req, res) => {
         return res.json({ message: "Account Created Successfully", database})
     } else {
         res.json({message: "User Already Exists!"}) }
+});
+
+app.post('/login', (req,res) => {
+    const { username, password } = req.body;
+    let result = database.filter((user) => {
+        user.username === username && user.password === password
+    });
+    if(result.length ===0) {
+        return res.json({
+            error_message: "Incorrect Username or Password"
+        })
+    } else {
+        res.json({
+            message: "Login Successful",
+            data: {
+                _id: result[0].id,
+                _email: result[0].email,
+            },
+        });
+    };
 });
 
 app.listen(PORT, () => {
