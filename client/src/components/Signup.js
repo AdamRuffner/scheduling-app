@@ -1,6 +1,7 @@
 import { React, useState } from "react";
 import { useNavigate, Link } from "react-router-dom";
 import { handleRegister } from "../utils/resource";
+import './forms.css';
 
 const Signup = () => {
     const [username, setUsername] = useState('');
@@ -21,7 +22,8 @@ const Signup = () => {
     return (
       <main className="signup">
         <form className="signup-form" onSubmit={handleSubmit}>
-            <h2 className="signup-title">Create an Account</h2>
+            <h2 className="title">Create an Account</h2>
+            <div className="style">
             <label htmlFor="email">Email</label>
             <input 
                 id='email'
@@ -53,6 +55,7 @@ const Signup = () => {
                 Already have an account? {''}
                 <Link className="link" to='/'>Sign In</Link>
             </p>
+            </div>
         </form>
       </main>  
     );
