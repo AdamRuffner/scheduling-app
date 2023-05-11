@@ -8,7 +8,7 @@ const BookUser = () => {
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [address, setAddress] = useState('');
-    const [startDate, setStartDate] = useState(new Date());
+    const [startDate, setStartDate] = useState('');
     
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -30,7 +30,7 @@ const BookUser = () => {
             <h2 className="title">Schedule your pickup</h2>
             <form  onSubmit={handleSubmit} className='booking-form'>
                 <div className='style' >
-                <label htmlFor='name'>Name</label>
+                <label htmlFor='name'>Name:</label>
                 <input 
                     id='name'
                     name='name'
@@ -39,7 +39,7 @@ const BookUser = () => {
                     value={name}
                     onChange={(e) => setName(e.target.value)}
                 />
-                <label htmlFor='email'>Email</label>
+                <label htmlFor='email'>Email:</label>
                 <input 
                     id='email'
                     name='email'
@@ -48,7 +48,7 @@ const BookUser = () => {
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
                 />
-                <label htmlFor='address'>Address</label>
+                <label htmlFor='address'>Address:</label>
                 <input 
                     id='address'
                     name='address'

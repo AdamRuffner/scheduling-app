@@ -45,19 +45,28 @@ button {
     color: black;
 }
 
+button:hover {
+    background-color:#93E9BE ;
+}
+
 .react-datepicker__calendar-icon {
     margin-top: 7px;
-    margin-left: 3px;
-    margin-right: 3px;
-    color: aquamarine;
+    /* margin-left: 30px; */
 }
 
 .react-datepicker__day--selected {
     background-color: aquamarine !important;
     color: black !important;
+    border-radius: 2rem !important;
 }
 
 .react-datepicker__time-list-item--selected {
     background-color: aquamarine !important;
     color: black !important;
+}
+
+.react-datepicker__view-calendar-icon input {
+    width: 100%;
+    margin-left: 0 auto;
+    text-align: center;
 }

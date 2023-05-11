@@ -23,7 +23,7 @@ const Login = () => {
             <form className='login-form' onSubmit={handleSubmit}>
                 <h2 className='title'>Log into your account</h2>
                 <div className='style'>
-                <label htmlFor='username'>Username</label>
+                <label htmlFor='username'>Username:</label>
                 <input 
                     id='username'
                     name='username'
@@ -32,7 +32,7 @@ const Login = () => {
                     onChange={(e) => setUsername(e.target.value)}
                     className='username'
                 />
-                <label htmlFor='password'>Password</label>
+                <label htmlFor='password'>Password:</label>
                 <input 
                     id='password'
                     name='password'
