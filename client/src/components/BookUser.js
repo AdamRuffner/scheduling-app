@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import DatePicker from 'react-datepicker';
 import emailjs from '@emailjs/browser';
-
 import "react-datepicker/dist/react-datepicker.css";
+import './forms.css';
 
 const BookUser = () => {
     const [name, setName] = useState('');
@@ -27,8 +27,9 @@ const BookUser = () => {
     
     return (
         <div className="book-container">
-            <h2 className="book-title">Schedule your pickup</h2>
+            <h2 className="title">Schedule your pickup</h2>
             <form  onSubmit={handleSubmit} className='booking-form'>
+                <div className='style' >
                 <label htmlFor='name'>Name</label>
                 <input 
                     id='name'
@@ -57,7 +58,7 @@ const BookUser = () => {
                     onChange={(e) => setAddress(e.target.value)}
                 />
                 <label htmlFor='calendar'></label>
-                <DatePicker 
+                <DatePicker wrapperClassName='datePicker'
                     showIcon
                     placeholderText='Select Day and Time'
                     selected={startDate} 
@@ -67,7 +68,7 @@ const BookUser = () => {
                     onChange={(date) => setStartDate(date)}
                 />
                 <button className='booking-button' >Book Now!</button>
-
+                </div>
             </form>
         </div>
     )

@@ -30,6 +30,10 @@ textarea {
     border-radius: 1.5rem;
 }
 
+input:focus {
+    outline-color: aquamarine;
+}
+
 label {
     padding-left: 1rem;
 }
@@ -39,4 +43,21 @@ button {
     padding: 1rem;
     border-radius: 1.5rem;
     color: black;
+}
+
+.react-datepicker__calendar-icon {
+    margin-top: 7px;
+    margin-left: 3px;
+    margin-right: 3px;
+    color: aquamarine;
+}
+
+.react-datepicker__day--selected {
+    background-color: aquamarine !important;
+    color: black !important;
+}
+
+.react-datepicker__time-list-item--selected {
+    background-color: aquamarine !important;
+    color: black !important;
 }
