@@ -43,6 +43,8 @@ button {
     padding: 1rem;
     border-radius: 1.5rem;
     color: black;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bolder;
 }
 
 button:hover {
@@ -69,4 +71,16 @@ button:hover {
     width: 100%;
     margin-left: 0 auto;
     text-align: center;
+}
+
+/* nav styling */
+
+.nav {
+    display: flex;
+    justify-content:space-between ;
+    margin: 2rem;
+}
+
+h1{
+    font-family: 'Raleway', sans-serif;
 }

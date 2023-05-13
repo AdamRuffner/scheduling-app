@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import DatePicker from 'react-datepicker';
 import emailjs from '@emailjs/browser';
+import Nav from './Nav';
 import "react-datepicker/dist/react-datepicker.css";
 import './forms.css';
 
@@ -27,6 +28,7 @@ const BookUser = () => {
     
     return (
         <div className="book-container">
+            <Nav />
             <h2 className="title">Schedule your pickup</h2>
             <form  onSubmit={handleSubmit} className='booking-form'>
                 <div className='style' >
