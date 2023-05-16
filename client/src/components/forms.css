@@ -81,6 +81,22 @@ button:hover {
     margin: 2rem;
 }
 
-h1{
+h1 {
     font-family: 'Raleway', sans-serif;
+}
+
+h3 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    line-height: 2rem;
+    color: white;
+    padding: 5rem;
+    width: 30%;
+    margin: 0 auto;
+}
+
+.lottie {
+    width: 30%;
+    margin: 0 auto;
 }

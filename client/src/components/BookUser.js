@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import DatePicker from 'react-datepicker';
 import emailjs from '@emailjs/browser';
 import Nav from './Nav';
@@ -10,6 +11,7 @@ const BookUser = () => {
     const [email, setEmail] = useState('');
     const [address, setAddress] = useState('');
     const [startDate, setStartDate] = useState('');
+    const navigate = useNavigate();
     
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -24,6 +26,7 @@ const BookUser = () => {
         setEmail('');
         setAddress('');
         setStartDate('');
+        navigate('/confirmation')
     };
     
     return (
