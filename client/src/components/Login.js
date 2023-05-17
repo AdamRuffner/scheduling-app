@@ -28,6 +28,7 @@ const Login = () => {
                     id='username'
                     name='username'
                     type='text'
+                    required
                     value={username}
                     onChange={(e) => setUsername(e.target.value)}
                     className='username'
@@ -37,6 +38,7 @@ const Login = () => {
                     id='password'
                     name='password'
                     type='password'
+                    required
                     value={password}
                     onChange={(e => setPassword(e.target.value))}
                     className='password'
