@@ -1,102 +1,103 @@
 body {
-    background-color: black;
-    color: white;
-  }
+  background-color: black;
+  color: white;
+}
 
 .title {
-    display: flex;
-    justify-content: center;
-    margin: 5rem;
-    color: aquamarine;
-    text-transform: uppercase;
-  }
-  
-  .link {
-    color: aquamarine;
-    text-decoration: none;
-  }
+  display: flex;
+  justify-content: center;
+  margin: 5rem;
+  color: aquamarine;
+  text-transform: uppercase;
+}
+
+.link {
+  color: aquamarine;
+  text-decoration: none;
+}
 
 .style {
-    width: 40%;
-    margin: auto;
+  width: 25%;
+  margin: auto;
 }
 
 input,
 textarea {
-	padding: 1rem;
-	width: 100%;
-    margin-top: .5rem;
-	margin-bottom: 1rem;
-    border-radius: 1.5rem;
+  padding: 1rem;
+  width: 100%;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  border-radius: 1.5rem;
 }
 
 input:focus {
-    outline-color: aquamarine;
+  outline-color: aquamarine;
 }
 
 label {
-    padding-left: 1rem;
+  padding-left: 1rem;
 }
 
 button {
-    background-color: aquamarine;
-    padding: 1rem;
-    border-radius: 1.5rem;
-    color: black;
-    font-family: 'Raleway', sans-serif;
-    font-weight: bolder;
+  background-color: aquamarine;
+  padding: 1rem;
+  border-radius: 1.5rem;
+  color: black;
+  font-family: "Raleway", sans-serif;
+  font-weight: bolder;
 }
 
 button:hover {
-    background-color:#93E9BE ;
+  background-color: #93e9be;
 }
 
 .react-datepicker__calendar-icon {
-    margin-top: 7px;
-    /* margin-left: 30px; */
+  margin-top: 7px;
+  /* margin-left: 30px; */
 }
 
 .react-datepicker__day--selected {
-    background-color: aquamarine !important;
-    color: black !important;
-    border-radius: 2rem !important;
+  background-color: aquamarine !important;
+  color: black !important;
+  border-radius: 2rem !important;
 }
 
 .react-datepicker__time-list-item--selected {
-    background-color: aquamarine !important;
-    color: black !important;
+  background-color: aquamarine !important;
+  color: black !important;
 }
 
 .react-datepicker__view-calendar-icon input {
-    width: 100%;
-    margin-left: 0 auto;
-    text-align: center;
+  width: 100%;
+  margin-left: 0 auto;
+  text-align: center;
 }
 
 /* nav styling */
 
 .nav {
-    display: flex;
-    justify-content:space-between ;
-    margin: 2rem;
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem;
 }
 
 h1 {
-    font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
+  margin-left: 2rem;
 }
 
 h3 {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    line-height: 2rem;
-    color: white;
-    padding: 5rem;
-    width: 30%;
-    margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  line-height: 2rem;
+  color: white;
+  padding: 5rem;
+  width: 30%;
+  margin: 0 auto;
 }
 
 .lottie {
-    width: 30%;
-    margin: 0 auto;
+  width: 30%;
+  margin: 0 auto;
 }
