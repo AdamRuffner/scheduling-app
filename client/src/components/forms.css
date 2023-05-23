@@ -1,3 +1,7 @@
+* {
+  outline: 1px solid red;
+}
+
 body {
   background-color: black;
   color: white;
@@ -6,7 +10,9 @@ body {
 .title {
   display: flex;
   justify-content: center;
-  margin: 5rem;
+  width: 25%;
+  margin: 0 auto;
+  padding: 2rem;
   color: aquamarine;
   text-transform: uppercase;
 }
@@ -32,6 +38,14 @@ textarea {
 
 input:focus {
   outline-color: aquamarine;
+}
+
+.login-form {
+  width: 100%;
+}
+
+.booking-form {
+  width: 100%;
 }
 
 label {
@@ -67,7 +81,7 @@ button:hover {
 }
 
 .react-datepicker__view-calendar-icon input {
-  width: 100%;
+  /* width: 100%; */
   margin-left: 0 auto;
   text-align: center;
 }
@@ -82,6 +96,7 @@ button:hover {
 
 h1 {
   font-family: "Raleway", sans-serif;
+  width: 25%;
   margin-left: 2rem;
 }
 
@@ -109,14 +124,34 @@ h3 {
   }
 
   .title {
-    width: 100%;
+    width: 90%;
   }
 
   h3 {
-    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    line-height: 2rem;
+    color: white;
+    padding: 5rem;
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  p {
+    display: flex;
+    justify-content: center;
   }
 
   .lottie {
     width: 60%;
+  }
+
+  input {
+    padding: 1rem;
+    width: 80%;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    border-radius: 1.5rem;
   }
 }
