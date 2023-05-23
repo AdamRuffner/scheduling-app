@@ -53,7 +53,6 @@ button:hover {
 
 .react-datepicker__calendar-icon {
   margin-top: 7px;
-  /* margin-left: 30px; */
 }
 
 .react-datepicker__day--selected {
@@ -100,4 +99,24 @@ h3 {
 .lottie {
   width: 30%;
   margin: 0 auto;
+}
+
+/* Styling for mobile */
+
+@media only screen and (max-width: 390px) {
+  .style {
+    width: 95%;
+  }
+
+  .title {
+    width: 100%;
+  }
+
+  h3 {
+    width: 100%;
+  }
+
+  .lottie {
+    width: 60%;
+  }
 }
