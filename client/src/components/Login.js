@@ -12,7 +12,6 @@ const Login = () => {
     if (username.trim() && password.trim()) {
       e.preventDefault();
       handleLogin(username, password, navigate);
-      console.log({ username, password });
       setUsername("");
       setPassword("");
     }
